@@ -11,7 +11,7 @@ so the browser would otherwise block cross-origin requests. In production, this 
 * */
 @CrossOrigin
 @RestController
-@RequestMapping("/api/movies")
+@RequestMapping("/api/v1/movies")
 public class MovieController {
 
     private final MovieService movieService;

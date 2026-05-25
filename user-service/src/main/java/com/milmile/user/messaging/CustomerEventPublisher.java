@@ -7,7 +7,9 @@ import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.context.event.EventListener;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CustomerEventPublisher {
 
     private static final Logger log = LoggerFactory.getLogger(CustomerEventPublisher.class);
