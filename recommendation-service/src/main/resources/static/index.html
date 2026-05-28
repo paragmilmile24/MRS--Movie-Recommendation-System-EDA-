@@ -137,9 +137,9 @@
     const params = new URLSearchParams(window.location.search);
     const CUSTOMER_ID = params.get("customer") || 1;
     const API_RECOMMENDATION =
-        "http://localhost:8080/api/recommendations";
-    const API_CUSTOMER = "http://localhost:6060/api/customers";
-    const API_MOVIE = "http://localhost:7070/api/movies";
+        "http://localhost:8080/api/v1/recommendations";
+    const API_CUSTOMER = "http://localhost:6060/api/v1/customers";
+    const API_MOVIE = "http://localhost:7070/api/v1/movies";
     const TMDB_BASE = "https://image.tmdb.org/t/p/w500";
 
     async function init() {
@@ -228,7 +228,8 @@
                     <p class="text-[9px] font-black text-red-600 uppercase tracking-widest">${movie.genres[0] || ""}</p>
                     <h3 class="text-xs font-bold truncate uppercase text-white">${movie.title}</h3>
                 </div>
-            </div>
+            </div>q
+            
         `;
         return card;
     }
