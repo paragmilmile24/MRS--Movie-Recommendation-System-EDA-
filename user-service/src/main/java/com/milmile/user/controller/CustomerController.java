@@ -6,6 +6,7 @@ import com.milmile.user.service.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/customers")
 public class CustomerController {
